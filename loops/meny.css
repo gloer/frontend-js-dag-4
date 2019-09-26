@@ -1,0 +1,20 @@
+
+
+#topMenu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2px;
+}
+#topMenu a {
+    font-family: sans-serif;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+#topMenu a.valgt {
+    background-color: bisque;
+    color: darkblue;
+}
