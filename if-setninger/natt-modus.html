@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Natt-modus</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        
+        .night {
+            background-color: black;
+            color: wheat;
+        }
+
+        .day {
+            background-color: #eee;
+            color: #222;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Velkommen til min bil</h1>
+    <h2>Klikk til høyre for nattmodus</h2>
+    <h2>Klikk til høyre for dagmodus</h2>
+
+    <script>
+        function settModus(klikk) {
+            const xpos = klikk.clientX;
+            const midten = window.innerWidth / 2;
+
+            if(xpos > midten) {
+                document.body.className = "night";
+                document.body.classList.add("superklasse");
+            } else {
+                document.body.className = "day";
+                
+            }
+
+        }
+
+        document.addEventListener("click", settModus);
+
+    </script>
+    
+</body>
+</html>
